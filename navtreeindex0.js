@@ -1,0 +1,23 @@
+var NAVTREEINDEX0 =
+{
+"advanced.html":[2,2],
+"advanced.html#autotoc_md3":[2,2,0],
+"advanced.html#lbl_useofmin":[2,2,0,0],
+"define_8h.html":[3,0,0,0],
+"define_8h.html#a74e75242132eaabbc1c512488a135926":[3,0,0,0,3],
+"define_8h.html#a996f7be338ccb40d1a2a5abc1ad61759":[3,0,0,0,0],
+"define_8h.html#aacc3ee1a7f283f8ef65cea31f4436a95":[3,0,0,0,2],
+"define_8h.html#af2659c0e29e86570c80cdd680c08de7f":[3,0,0,0,1],
+"define_8h_source.html":[3,0,0,0],
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[3,0,0],
+"files.html":[3,0],
+"globals.html":[3,1,0],
+"globals_defs.html":[3,1,1],
+"index.html":[0],
+"index.html":[],
+"md__section_1.html":[2],
+"md__section_1.html#autotoc_md2":[2,0],
+"md__section_2.html":[1],
+"pages.html":[],
+"part1.html":[2,1]
+};
