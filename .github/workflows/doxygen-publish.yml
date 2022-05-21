@@ -17,12 +17,14 @@ jobs:
           wget https://www.doxygen.nl/files/doxygen-1.9.4.linux.bin.tar.gz
           tar -xvzf doxygen-1.9.4.linux.bin.tar.gz
           ln -s doxygen-1.9.4/bin/doxygen docs/doxygen
-          ls -l *
           mkdir -p docs/html/my_first
           mkdir -p docs/latex/my_first
+          ls -l *
+          docs/doxygen --version
     - name: compile doxygen manual
       run: |
           cd docs
+          ls -l .
           ./doxygen myfirst.cfg
     - name: bublish generated manual to GitHub Pages
       uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
