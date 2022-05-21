@@ -18,8 +18,8 @@ jobs:
           tar -xvzf doxygen-1.9.4.linux.bin.tar.gz
           cd docs
           ln -s ../doxygen-1.9.4/bin/doxygen doxygen
-          mkdir -p docs/html/my_first
-          mkdir -p docs/latex/my_first
+          mkdir -p html/my_first
+          mkdir -p latex/my_first
           ls -l *
           ./doxygen --version
     - name: compile doxygen manual
