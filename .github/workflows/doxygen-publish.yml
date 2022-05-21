@@ -1,0 +1,29 @@
+name: Compile & Upload Doxygen to github pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-docs:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+
+    - name: doxygen installation
+      run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz
+          wget https://www.doxygen.nl/files/doxygen-1.9.4.linux.bin.tar.gz
+          tar -xvzf doxygen-1.9.4.linux.bin.tar.gz
+          ln -s doxygen-1.9.4/bin/doxygen doxygen
+    - name: compile doxygen manual
+      run: |
+          cd docs
+          ./doxygen myfirst.cfg
+    - name: bublish generated manual to GitHub Pages
+      uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
+      with:
+        dir: docs/html/my_first
+        branch: gh-pages
+        token: ${{ secrets.ACCESS_TOKEN }}
