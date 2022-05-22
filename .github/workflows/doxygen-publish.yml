@@ -16,14 +16,15 @@ jobs:
           sudo apt-get install -y graphviz default-jre
           wget https://www.doxygen.nl/files/doxygen-1.9.4.linux.bin.tar.gz
           wget https://github.com/plantuml/plantuml/releases/download/v1.2022.5/plantuml-1.2022.5.jar
-          tar -xvzf doxygen-1.9.4.linux.bin.tar.gz
+          tar -xzf doxygen-1.9.4.linux.bin.tar.gz
+          ls -l *
           cd docs
           ln -s ../doxygen-1.9.4/bin/doxygen doxygen
+          ln -s ../plantuml-1.2022.5.jar plantuml.jar
           mkdir -p html/my_first
           mkdir -p latex/my_first
-          ls -l *
           ./doxygen --version
-          java -jar ../plantuml-1.2022.5.jar -version
+          java -jar plantuml.jar -version
     - name: compile doxygen manual
       run: |
           cd docs
