@@ -28,6 +28,11 @@ var NAVTREE =
     [ "Section Introduction", "index.html", null ],
     [ "Section 2", "md__section_2.html", null ],
     [ "Section 1", "md__section_1.html", "md__section_1" ],
+    [ "PCIe Mapping", "pcie_mapping.html", [
+      [ "BAR 0 mapping", "pcie_mapping.html#lblResource0", null ],
+      [ "BAR 2 mapping", "pcie_mapping.html#lblResource2", null ],
+      [ "BAR 4 mapping", "pcie_mapping.html#lblResource4", null ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
