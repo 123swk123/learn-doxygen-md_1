@@ -5,8 +5,8 @@
 ## Design-Diagram
 
 Lets try some plant uml based architecture diagram here
-@startuml
-@startwire
+@startuml{myimage.svg}
+@startwire{myimage.svg}
 ' skinparam DefaultFontSize 20
 ' skinparam ArrowFontSize 20
 
