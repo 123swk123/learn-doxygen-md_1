@@ -5,7 +5,7 @@
 ## Design-Diagram
 
 Lets try some plant uml based architecture diagram here
-@startuml{inline_umlgraph_svgmy_first.svg} "Image Caption"
+@startuml
 @startwire
 ' skinparam DefaultFontSize 20
 ' skinparam ArrowFontSize 20
