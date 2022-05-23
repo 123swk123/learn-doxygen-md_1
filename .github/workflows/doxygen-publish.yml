@@ -13,7 +13,7 @@ jobs:
     - name: doxygen installation
       run: |
           sudo apt-get update
-          sudo apt-get install -y graphviz default-jre texlive-base
+          sudo apt-get install -y graphviz default-jre texlive-full
           wget https://www.doxygen.nl/files/doxygen-1.9.4.linux.bin.tar.gz
           wget https://github.com/plantuml/plantuml/releases/download/v1.2022.5/plantuml-1.2022.5.jar
           tar -xzf doxygen-1.9.4.linux.bin.tar.gz
